@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2023-12-21 11:21",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://voltcalub.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://voltcalub.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": true,
+    "usedWebp": true,
+    "favicon": false,
+    "mbrsiteDomain": "hu2mpzzjp8",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Volta Club™ | Home Official Site",
+        "meta_descr": "An electrifying establishment where digital currency meets discreet charm. Dive into decentralized finance and let sparks fly.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://voltaclub.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/volta-club.png\" alt=\"Volta Club\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZ3ba2HGaV",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://voltcalub.github.io/\" class=\"text-primary\">Volta Club</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Exploring <a href=\"https://volta.club/\" class=\"text-primary\">Volta Club</a>: A Hub of Innovation, Collaboration, and Community in the Tech World</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the vibrant landscape of technology and innovation, Volta Club emerges as a dynamic and inclusive hub that fosters collaboration, creativity, and community. As the digital realm continues to evolve, Volta Club stands as a testament to the power of collective intelligence and shared passion for pushing the boundaries of what's possible. This article delves into the unique aspects of Volta Club, exploring its origin, mission, key features, and the impact it has on the tech community.\n<br>\n<br>The Genesis of Volta Club:\n<br>\n<br>Volta Club is not just a physical space; it's a concept that originated from the collective vision of tech enthusiasts, entrepreneurs, and innovators seeking a platform to collaborate and create. Born out of the recognition that breakthroughs often occur at the intersection of diverse perspectives, Volta Club was conceptualized as a space that transcends traditional boundaries, bringing together individuals with varied skill sets, backgrounds, and expertise.\n<br>\n<br>Mission and Values:\n<br>\n<br>At the heart of Volta Club is a mission to cultivate a culture of innovation, learning, and mutual support. The club's values revolve around the belief that progress is accelerated through collaboration, and that by providing a space where individuals can connect, share ideas, and work together, the potential for groundbreaking innovation is amplified.\n<br>\n<br>Key Features of Volta Club:\n<br>\n<br>Diverse Workspaces:\n<br>Volta Club boasts a variety of workspaces designed to cater to the diverse needs of its members. From open collaborative areas that encourage spontaneous interactions to private offices for focused work, the club's layout reflects a thoughtful approach to creating an environment conducive to productivity and creativity.\n<br>\n<br>State-of-the-Art Facilities:\n<br>Recognizing the importance of providing cutting-edge tools for its members, Volta Club is equipped with state-of-the-art facilities. High-speed internet, advanced tech infrastructure, and modern meeting spaces contribute to an atmosphere where ideas can be brought to life seamlessly.\n<br>\n<br>Event Spaces for Knowledge Sharing:\n<br>Volta Club serves as a venue for a myriad of events, from workshops and seminars to networking sessions and product launches. The club's commitment to knowledge sharing and continuous learning is evident through its diverse event calendar, which brings together thought leaders, industry experts, and aspiring innovators.\n<br>\n<br>Innovation Labs and Maker Spaces:\n<br>To encourage hands-on experimentation and prototyping, Volta Club provides innovation labs and maker spaces. These areas are equipped with tools, materials, and expert guidance, allowing members to turn their ideas into tangible prototypes and projects.\n<br>\n<br>Community-Driven Initiatives:\n<br>What sets Volta Club apart is its emphasis on community-driven initiatives. Members actively participate in shaping the club's culture, organizing events, and fostering an environment where everyone feels not just welcome but essential to the collective mission of pushing the boundaries of technology.\n<br>\n<br>Advancing Collaboration and Creativity:\n<br>\n<br>Cross-Disciplinary Collaboration:\n<br>Volta Club's success lies in its ability to facilitate cross-disciplinary collaboration. By bringing together individuals from diverse fields such as software development, design, business, and engineering, the club becomes a melting pot of ideas where different perspectives converge to create innovative solutions.\n<br>\n<br>Incubation Programs:\n<br>Volta Club goes beyond providing physical spaces; it actively supports the growth of startups through incubation programs. These programs offer mentorship, funding opportunities, and access to a network of experienced professionals, enabling emerging tech ventures to navigate the challenges of entrepreneurship.\n<br>\n<br>Hackathons and Innovation Challenges:\n<br>To fuel the spirit of innovation, Volta Club organizes hackathons and innovation challenges. These events not only provide a platform for members to showcase their skills but also result in the development of prototypes and solutions that have the potential to address real-world challenges.\n<br>\n<br>Networking Opportunities:\n<br>Recognizing the importance of networking in the tech industry, Volta Club organizes regular networking events. These gatherings facilitate the exchange of ideas, collaboration on projects, and the formation of professional connections that often extend beyond the club's physical space.\n<br>\n<br>Impact on the Tech Community:\n<br>\n<br>Fostering a Culture of Innovation:\n<br>Volta Club has a profound impact on the tech community by fostering a culture of innovation. By providing a space where creativity is encouraged, risk-taking is embraced, and failure is seen as a stepping stone to success, the club contributes to a mindset shift within the broader tech ecosystem.\n<br>\n<br>Nurturing the Next Generation of Innovators:\n<br>Through its incubation programs, mentorship initiatives, and collaborative environment, Volta Club plays a pivotal role in nurturing the next generation of innovators. Emerging talents find a supportive ecosystem that empowers them to transform their ideas into viable and impactful projects.\n<br>\n<br>Knowledge Sharing and Skill Development:\n<br>The club's commitment to knowledge sharing through events, workshops, and collaborative projects enhances the skill set of its members. This, in turn, contributes to a more skilled and adaptable tech workforce, positively impacting the broader tech industry.\n<br>\n<br>Elevating Tech Entrepreneurship:\n<br>Volta Club's support for startups and entrepreneurship initiatives elevates the overall landscape of tech entrepreneurship. By providing resources, mentorship, and a collaborative space, the club becomes a catalyst for the growth and success of emerging tech ventures.\n<br>\n<br>Conclusion:\n<br>\n<br>Volta Club stands as a beacon in the tech world, symbolizing the power of collaboration, innovation, and community. As a dynamic hub that transcends traditional boundaries, the club provides a space where individuals from diverse backgrounds converge to create, learn, and shape the future of technology. Its impact on the tech community is not just in the physical spaces it provides but in the culture it cultivates—an inclusive culture that empowers individuals to push the boundaries of what's possible and collectively contribute to the advancement of technology and innovation. Volta Club is not just a club; it's a movement—a movement that propels the tech community forward with a shared vision of a brighter, more collaborative, and innovative future.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tZ3baSa6Vu",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
